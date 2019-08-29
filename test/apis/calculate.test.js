@@ -14,7 +14,6 @@ test('test add 1 + 1, 4 + 9, 20 + 30, 1,000,000,000,000 + 16, -1 + 32, -1.345 + 
     for(let i = 0; i <= request.length; i++){
         calculate.add(request[i], { send } )
     }
-    
     await expect(send.mock.calls[0][0]).toBe(2);
     await expect(console.log.mock.calls[0][0]).toEqual(request[0].a + '+' + request[0].b + '=2');
     await expect(send.mock.calls[1][0]).toBe(13);
