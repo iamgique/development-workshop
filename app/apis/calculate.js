@@ -1,11 +1,11 @@
 const add = async (req, res) => {
-    const result = req.a + req.b
-    console.log(req.a + '+' + req.b + '=' + result)
+    const result = req.params.a + req.params.b
+    console.log(req.params.a + '+' + req.params.b + '=' + result)
     await res.send(result)
 }
 
-const minus = async (req, res) => {
-    await res.send('Hello minus!')
+const subtract = async (req, res) => {
+    await res.send('Hello subtract!')
 }
 
 
@@ -19,7 +19,7 @@ const divide = async (req, res) => {
 
 module.exports = {
     add: add,
-    minus: minus,
+    subtract: subtract,
     multiply: multiply,
     divide: divide
 }

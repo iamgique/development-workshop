@@ -6,4 +6,5 @@ app.listen(port, () =>
   console.log(`App is listening on port ${port}.`)
 )
 
-app.use(require('./routes/routes'));
+app.use(require('./routes/'));
+app.use(require('./routes/calculate'));
