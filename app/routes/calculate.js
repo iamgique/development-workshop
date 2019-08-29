@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router()
 const bodyParser = require('body-parser')
 
-const calculate = require('../apis/calculate');
+const calculate = require('../controller/calculate');
 
 router.get('/add/:a/:b', calculate.add)
 router.get('/subtract/:a/:b', calculate.subtract)

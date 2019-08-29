@@ -1,4 +1,4 @@
-const calculate = require('../../app/apis/calculate');
+const calculate = require('../../app/controller/calculate');
 
 const request = [
     { params: { a: 1, b: 1 }},
