@@ -1,4 +1,4 @@
-const index = require('../../app/apis/index');
+const index = require('../../app/controller/index');
 
 test('test index', () => {
     let send = jest.fn()
